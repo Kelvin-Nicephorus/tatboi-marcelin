@@ -1,0 +1,1428 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ /* wWe declared this 62.5% because we want to give our own rem value to be 10px and not the browser based which is 16px , therefore we did 62.5% multiply by 16px to get our value for our font to be based on 10px if we want to start using rem as our unit  */
+
+html {
+    font-size: 62.5%;
+}
+
+ html, body {
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+/* BEGINNING OF NAV PAGE */
+
+
+
+section {
+    width: 100%;
+    height: auto;
+    background-image: url('./images/Tat\ 1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+}
+
+nav {
+    padding: 1rem 2rem;
+    background-color: rgba(98, 98, 99, 0.107);
+    position: sticky;
+    top: 0;
+}
+
+ /* Here we did, our proposed max-width (2600px) divided by our default pixels being 16px, and we have 162.5 in rem value */
+
+.wrapper-container {
+    max-width: 162.5rem;
+    height: auto;
+    margin: 0 auto;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    text-wrap: nowrap;
+    font-family: "Modern Antiqua", serif;
+    font-weight: 900;
+    font-style: normal;
+    font-style: italic;
+    font-size: 2.4rem;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.logo .gold {
+    color: rgb(219, 166, 7);
+    text-shadow: 5px 5px 5px #000;
+}
+
+.logo h2 {
+    color: #fff;
+    text-shadow: 5px 5px 5px #000;
+}
+
+.yellow {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1rem;
+}
+
+.navbar-toggle {
+    display: none;
+    background: transparent;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 35px;
+    height: 5px;
+    margin: 5px auto;
+    background: #fff;
+    transition: all 0.4s ease-in-out;
+}
+
+.menus {
+    display: flex;
+    list-style-type: none;
+    /* margin-right: 7rem; */
+}
+
+.menus li {
+    padding: 0 3rem;
+}
+
+.menus a {
+    font-family: "Modern Antiqua", serif;
+    font-style: normal;
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 3px 3px 3px #000;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.menus a:hover {
+    color: rgb(219, 166, 7);
+}
+
+.menus .active-2 {
+    background-color: #87050596;
+    padding: .7rem 1.3rem;
+    border-radius: 5px;
+    border: 1.8px outset#fff;
+}
+
+/* END OF NAV PAGE */
+
+
+
+/* BEGINNING OF MAIN PAGE  */
+
+/* BEGINNING OF HERO SECTION  */
+
+main {
+    width: 100%;
+}
+
+.art-wrapper {
+    padding-top: 4.5rem;  
+    padding-left: 1.5rem;
+    color: #fff;
+}
+
+.split {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.split h3 {
+    font-family: "Roboto";
+    color: rgb(219, 166, 7);
+    text-shadow: 2px 2px 2px #000;
+    letter-spacing: 2.5px;
+    font-weight: 900;
+}
+
+.split .line-4 {
+    background-color: rgb(219, 166, 7);
+    border: 1px solid rgb(219, 166, 7);
+    height: 1px;
+    width: 10%;
+}
+
+.lng h1 {
+    font-family: "Alice", serif;
+    font-weight: 600;
+    font-size: 6.5rem;
+    padding-top: 1.5rem;
+}
+
+.lng h2 {
+     font-family: "Bebas Neue", sans-serif;
+     font-weight: 300;
+     font-size: 3rem;
+     letter-spacing: 2.5px;
+}
+
+.story {
+    font-family: "Roboto";
+    width: 32%;
+    font-size: 1.3rem;
+    padding-top: 2.2rem;
+}
+
+.tat-cont {
+    padding-top: 3rem;
+    padding-left: 1.5rem;
+}
+
+.tat {
+    width: 26%;
+    font-size: 1.8rem;
+    padding: 2rem 1.5rem;
+    color: #fff;
+    text-shadow: 5px 5px 5px #000;
+    border: 4px solid rgba(219, 166, 7, 0.99);
+    background-color: #00000066;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+/* END OF HERO SECTION  */
+
+/* BEGINNING OF CTA (CALL TO ACTION) SECTION */
+
+.but {
+    display: flex;
+    gap: 1rem;
+    width: 50%;
+    padding-top: 2rem;
+    padding-left: 1.5rem;
+}
+
+ .butts, .butt {
+    color: #000;
+    padding: 1.3rem 2.5rem ;
+    background-color:  rgb(219, 166, 7);
+    font-size: 1.2rem;
+    border: none;
+    font-family:  "Nunito", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.butts:hover, .butts:hover i {
+    background-color: #000;
+    color: #fff;
+}
+
+.but .butt {
+    background-color: #000;
+    color: #fff;
+}
+
+.butt:hover, .butt:hover i {
+   background-color:  rgb(219, 166, 7);
+   color: #000;
+}
+
+.fa-pen-to-square {
+    color: #000;
+    font-size: 1.5rem;
+}
+
+.fa-arrow-right-long {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+/* END OF CTA SECTION  */
+
+/* BEGINNING OF GRID SECTION  */
+
+.grid-container {
+    color: #fff;
+    font-family: "Modern Antiqua", serif;
+    font-size: 1.6rem;
+    font-style: italic;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 3.5rem;
+    column-gap: 2.5rem;
+    overflow: hidden;
+}
+
+figure img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    border: .5px outset rgb(219, 166, 7);
+    border-radius: 10px
+}
+figcaption {
+    /* color: #fff;
+    font-weight: 400;
+    border: 1px solid #fff;
+    background-color: #000;
+    padding: 1rem;
+    border-radius: 8px; */
+    margin-top: 1rem;
+}
+
+/* END OF GRID SECTION  */
+
+/* BEGINNING OF FOOTER SECTION  */
+
+footer {
+    margin-top: 3rem;
+}
+
+.footer-bg {
+    background-color: #000;
+    width: 100%;
+    min-height: 250px;
+    padding: 2rem 1.5rem;
+
+}
+
+.line-3 {
+    background-color: rgb(219, 166, 7);
+    border: none;
+    height: 1px;
+    width: 10%;
+    margin: 0 ;
+}
+
+
+.grid-footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1rem;
+    width: 70%;
+    margin: 1rem auto;
+    padding-bottom: 3rem;
+    color: #fff;
+    text-align: center;
+}
+
+
+.logo-bg figure img {
+    width: 40%;
+    margin: 0 auto;
+    height: 100px;
+    border: none;
+}
+
+.tatboi {
+    display: flex;
+    padding-left: 1.5rem;
+    font-family: "Modern Antiqua", serif;
+    font-weight: 900;
+    font-size: 2.4rem;
+    padding-top: 1rem;
+}
+
+.tatboi-1 {
+    color: rgb(219, 166, 7);
+}
+
+.tatboi-2 {
+    color: #fff;
+    text-shadow: 5px 5px 5px #000;
+}
+
+.studio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .4rem;
+}
+
+.studio p {
+    font-size: 1.2rem;
+    font-family: "Roboto";
+    letter-spacing: 3px;
+}
+
+
+.tat-art {
+    font-size: 1.2rem;
+    font-family: "Roboto";
+}
+.tat-art-p {
+    padding-top: 2.5rem;
+}
+
+.tat-icons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    padding-top: .5rem;
+}
+
+.tat-icons i {
+    font-size: 1.7rem;
+    color: rgb(219, 166, 7);
+    border: 1px solid rgb(219, 166, 7);
+    padding: .4rem;
+    border-radius: 50%;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.contacts p {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: "Modern Antiqua", serif;
+    font-weight: 400;
+}
+
+.navigation h2, .services h2, .contacts h2 {
+    color: rgb(219, 166, 7);
+    font-weight: 800;
+    font-family: "Roboto";
+    text-decoration: underline;
+}
+
+.navigation-link {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding-top: .5rem;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation-link a, .services p {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: "Modern Antiqua", serif;
+    font-weight: 400;
+}
+
+.navigation-link a:hover {
+    color: rgb(219, 166, 7);
+}
+
+.services-p {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding-top: 1rem;
+}
+
+.contacts-p {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding-top: 1rem;
+    margin-left: 2rem;
+}
+
+.copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    width: 90%;
+    margin: 1rem auto;
+    padding-left: 10rem;
+}
+
+.copy-1 p {
+    color: #fff;
+    font-size: 1.1rem;
+    font-family: "Roboto";
+}
+
+.copy-2 {
+    display: flex;
+    gap: 2rem;
+    margin: 0 auto;
+}
+
+.copy-2 a {
+    color: #fff;
+    font-size: 1.1rem;
+    font-family: "Roboto";
+    padding-left: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.line-2 {
+    background-color: rgb(219, 166, 7);
+    border: none;
+    height: 1px;
+    width: 90%;
+    margin: 0 auto
+}
+
+.copy-2 a:hover {
+   color:  rgb(219, 166, 7);
+    text-decoration: underline;
+}
+
+.copy-2 p {
+    border-left: 2px solid rgb(219, 166, 7);
+    height: 1.5rem;
+}
+
+.wha-num, .call-num, .mail-num, .loc-num, .time-num {
+    display: flex;
+    gap: 1rem;
+}
+
+.fa-whatsapp, .fa-phone, .fa-envelope, .fa-location-crosshairs, .fa-clock, .fa-tiktok {
+    font-size: 1.5rem;
+    color: rgb(219, 166, 7);
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    width: 35px;
+    height: 35px;
+    background: #000;
+    color: #e6b53b;
+    border: 2px solid #e6b53b;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+
+    
+}
+
+
+/* Show the button */
+#backToTop.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+
+}
+
+/* Hover effect */
+#backToTop:hover {
+    background-color: #000;
+    color: #dba607;
+    border: 1px solid #dba607;
+}
+
+
+/* MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES  */
+
+@media (max-width: 1300px) {
+    .menus {
+        margin-right: 2rem;
+    }
+
+    .menus li {
+        padding: 0 2.5rem;
+    }
+}
+
+
+@media (max-width: 1270px) {
+    section {
+        width: 100%;
+    }
+
+    .menus {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4rem;
+        position: absolute;
+        height: 75vh;
+        width: 500px;
+        top: 0;
+        right: 0;
+        padding: 10rem 1.5rem;
+        margin-right: 0;
+        background-color: #000000;
+        box-shadow: 0 5px 5px rgba(238, 180, 6, 0.575);
+    }
+
+    .menus.active {
+        display: flex;
+    }
+
+    .navbar-toggle {
+        display: block;
+        z-index: 999 ;
+    }
+
+    .navbar-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .navbar-toggle.active .bar:nth-child(1) {
+        transform: translateY(10px) rotate(45deg);
+    }
+
+    .navbar-toggle.active .bar:nth-child(3) {
+        transform: translateY(-10px) rotate(-45deg);
+    }
+
+    .menus a {
+        font-size: 2.3rem;
+    }
+
+    .menus li {
+        border-bottom: 3px inset #fff;
+        width: 100%;
+        border-bottom-left-radius: 15px;
+        padding-bottom: 1.5rem;
+    }
+
+    .menus .active-2 {
+    padding: .7rem 1.5rem;
+    border-radius: 5px;
+    border: 2px solid #fff;
+}
+
+    .scale-up-hor-right {
+	-webkit-animation: scale-up-hor-right 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-hor-right 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.logo {
+    font-size: 3.5rem;
+}
+
+.split h3 {
+    font-size: 2rem;
+}
+
+.lng h1 {
+    font-size: 7rem;
+}
+
+.lng h2 {
+    font-size: 3.5rem;
+}
+
+.story {
+    width: 45%;
+}
+
+.story p {
+    font-size: 2.1rem;
+}
+
+.tat {
+    width: 30%;
+    font-size: 2rem;
+}
+
+.but {
+    gap: 1.5rem;
+    padding-top: 3rem;
+}
+
+ .but .butts, .butt {
+    padding: 1.5rem 3rem ;
+    font-size: 1.5rem;
+}
+
+.butts i, .butt i {
+    font-size: 2rem;
+}
+
+figure img {
+    width: 100%;
+}
+
+figcaption {
+    font-size: 2rem;
+}
+
+.logo-bg figure img {
+    width: 42%;
+}
+
+.grid-footer {
+    width: 90%;
+}
+
+.tatboi {
+    font-size: 3.2rem;
+}
+
+.line-3 {
+    border: 1.7px solid rgb(219, 166, 7);
+}
+
+.studio p {
+    font-size: 1.5rem;
+}
+
+.tat-art-p {
+    padding-top: 3.5rem;
+    font-size: 1.7rem;
+}
+
+.tat-icons {
+    padding-top: 1.5rem;
+}
+
+.tat-icons i {
+    font-size: 2rem;
+}
+
+.navigation h2, .services h2, .contacts h2 {
+    font-size: 1.7rem;
+}
+
+.navigation-link a, .services-p p, .contacts-p p {
+    font-size: 1.5rem;
+}
+
+.contacts-p i {
+    font-size: 1.7rem;
+}
+
+.copy-1 p, .copy-2 a {
+    font-size: 1.5rem;
+}
+
+}
+
+@media (max-width: 1080px) {
+    .story p {
+        font-size: 2rem;
+    }
+
+    .tat {
+        width: 43%;
+    }
+
+    .tat p {
+        font-size: 2.2rem;
+    }
+    
+
+     .but .butt {
+        padding: 2rem 4.5rem ;
+        font-size: 1.8rem;
+        white-space: nowrap;
+    }
+
+    .but .butts {
+        padding: 2rem 4.5rem ;
+        font-size: 1.8rem;
+        white-space: nowrap;
+    }
+    
+    .but .fa-pen-to-square {
+    font-size: 2.2rem;
+}
+
+.but .fa-arrow-right-long {
+    font-size: 2.2rem;
+}
+
+.grid-footer {
+    column-gap: .5rem;
+    width: 90%;
+}
+
+.tatboi {
+    font-size: 2.4rem;
+}
+
+.tat-art-p p {
+    font-size: 2rem;
+}
+
+.tat-icons {
+    font-size: 3rem;
+}
+
+.copy  {
+    width: 100%;
+    gap: 0;
+    padding-left: 2.5rem;
+}
+
+.copy p {
+    font-size: 1.8rem;
+}
+
+.copy-2 p {
+    height: 2.3rem;
+}
+
+.copy-2 {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.copy-2 a {
+    color: #fff;
+    font-size: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+}
+
+
+
+
+@media (max-width: 1000px) {
+    .grid-footer {
+        width: 100%;
+    }
+
+    .menus {
+        width: 400px;
+    }
+}
+
+
+
+
+@media (max-width: 850px) {
+
+    .menus {
+       width: 350px;
+   }
+
+
+   .tat {
+       width: 52%;
+   }
+
+   .tat p {
+       font-size: 2.3rem;
+       line-height: 3rem;
+       font-weight: 400;
+   }
+
+   .grid-footer {
+       grid-template-columns: 1fr;
+   }
+
+   .logo-bg figure img {
+   width: 30%;
+   margin: 0 auto ;
+   height: 250px;
+   border: none;
+}
+
+.tatboi {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 4rem;
+   padding-top: 1rem;
+}
+
+.studio p {
+   font-size: 2rem;
+}
+
+.tat-art {
+   font-size: 1.5rem;
+}
+
+.tat-art-p {
+   padding-top: 3rem;
+}
+
+.tat-icons {
+   gap: 1.7rem;
+   padding-top: 1rem;
+   padding-bottom: 3rem;
+}
+
+.tat-icons i {
+   font-size: 3rem;
+   padding: 1rem;
+}
+
+.navigation {
+   padding-top: 1.8rem;
+   padding-bottom: 3rem;
+}
+
+.navigation-link {
+   padding-top: 2rem;
+}
+
+.navigation-link a {
+   font-size: 2.2rem;
+}
+
+.services {
+   padding-top: 1.8rem;
+   padding-bottom: 3rem;
+}
+
+.services-p {
+   padding-top: 2rem;
+}
+
+.services-p p {
+   font-size: 2.2rem;
+}
+
+.navigation h2, .services h2, .contacts h2 {
+   font-size: 3rem;
+}
+
+.contacts {
+   padding-top: 1.5rem;
+}
+
+.contacts p {
+   font-size: 2.2rem;
+}
+
+.contacts-p {
+   padding-top: 2rem;
+   margin-left: 7rem;
+}
+
+}
+
+
+
+@media (max-width: 800px) {
+    .menus {
+        width: 280px;
+    }
+
+    .tat {
+        width: 65%;
+    }
+
+    .grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+
+.grid-container figure {
+    grid-column: span 2;
+}
+
+.grid-container figure:nth-child(4) {
+    grid-column: 2 / span 2;
+}
+
+.grid-container figure:nth-child(5) {
+    grid-column: 4 / span 2;
+}
+
+figcaption {
+    color: #fff;
+    font-weight: 400;
+    border: 1px solid #fff;
+    background-color: #000;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.copy {
+    gap: 0;
+    width: 100%;
+    padding-left: 4rem;
+}
+
+.copy-1 p {
+    font-size: 1.3rem;
+}
+
+.copy-2 {
+    gap: 1rem;
+}
+
+.copy-2 a {
+    font-size: 1.3rem;
+    padding-left: 1rem;
+}
+
+.copy-2 p {
+    border-left: 2px solid rgb(219, 166, 7);
+    height: 2.5rem;
+}
+
+}
+
+@media (max-width: 700px) {
+    .menus{
+         width: 250px;
+    }
+    .menus a {
+        font-size: 2rem;
+    }
+
+    .navbar-toggle {
+        margin-right: 0;
+    }
+
+    .but .butts {
+        padding: 2rem 1.8rem;
+        border-radius: 10px;
+        font-size: 1.8rem;
+    }
+
+    .but .butt {
+        padding: 2rem 1.8rem;
+        border-radius: 10px;
+        font-size: 1.8rem;
+    }
+
+}
+
+@media (max-width: 630px) {
+    .menus {
+        width: 230px;
+        border-radius: 10px;
+    }
+
+    .menus a {
+        font-size: 1.8rem;
+    }
+
+    .bar {
+        width: 30px;
+        height: 4px;
+    }
+
+     .navbar-toggle.active .bar:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .navbar-toggle.active .bar:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
+    .logo {
+        font-size: 2.7rem;
+    }
+
+    .lng h1 {
+        font-size: 5.5rem;
+    }
+
+    .lng h2 {
+        font-size: 2.7rem;
+    }
+
+    .story {
+        width: 87%;
+    }
+
+    .logo-bg figure img {
+        width: 35%;
+        height: 200%;
+    }
+
+    .tatboi {
+        font-size: 3rem;
+    }
+
+    .tat-art-p p {
+        font-size: 2.2rem;
+    }
+
+    .navigation h2, .services h2, .contacts h2 {
+        font-size: 2.7rem;
+    }
+
+    .navigation-link a, .services-p p, .contacts-p p {
+        font-size: 1.8rem;
+    }
+
+    .copy {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding-top: 1.5rem;
+        width: 100%;
+    }
+
+    .copy-1 p, .copy-2 a {
+        font-size: 1.7rem;
+    }
+
+    .but {
+        margin: 0 1rem 0 0;
+    }
+
+    .grid-container figure img {
+        border: none;
+    }
+}
+
+@media (max-width: 500px) {
+
+    section {
+        background-color: #000;
+    }
+
+    .menus {
+        width: 200px;
+    }
+
+    .yellow {
+        font-size: 2.2rem;
+    }
+
+    .navbar-toggle {
+        padding-top: 3rem;
+    }
+
+    .bar {
+        width: 30px;
+    }
+
+    .split h3 {
+        font-size: 1.6rem;
+    }
+
+    .lng h1 {
+        font-size: 4.2rem;
+    }
+
+    .lng h2 {
+        font-size: 2.2rem;
+    }
+
+    .story {
+        width: 80%;
+    }
+
+    .tat {
+        width: 85%;
+    }
+
+    .tat p {
+        font-size: 1.7rem;
+    }
+
+    .but {
+        width: 95%;
+        flex-direction: column;
+        gap: 2rem;
+}
+
+.but .butts {
+    text-align: center;
+    padding: 3rem;
+    font-size: 2rem;
+}
+
+.but .butts:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.fa-pen-to-square {
+    color: #000;
+}
+
+.but .butt {
+    text-align: center;
+    padding: 3rem;
+    font-size: 2rem;
+}
+
+.but.butt:hover {
+    background-color: rgb(219, 166, 7);
+    color: #000;
+}
+
+.fa-arrow-right-long {
+    color: #000;
+}
+
+.copy {
+    margin: 0;
+    padding: 3rem 0 0 0;
+}
+
+footer .footer-bg {
+    background-color: #ed090921;
+}
+
+
+}
+
+@media (max-width: 450px) {
+    section {
+        background-color: #000000;
+    }
+    
+    .bar {
+        width: 28px;
+        height: 3px;
+    }
+
+    .menus {
+        height: 80vh;
+    }
+
+    .menus a {
+        font-size: 1.6rem;
+    }
+
+     .navbar-toggle.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .navbar-toggle.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .yellow {
+        font-size: 1.7rem;
+    }
+
+   .split h3 {
+    font-size: 1.4rem;
+   }
+
+   .lng h1 {
+    font-size: 3.8rem;
+   }
+
+   .lng h2 {
+    font-size: 1.8rem;
+   }
+
+   .story {
+    width: 95%;
+   }
+
+   .story p {
+    font-size: 1.6rem;
+   }
+
+   .tat {
+    width: 98%;
+   }
+
+   .tat p {
+    font-size: 1.5rem;
+   }
+
+   .but .butts {
+    font-weight: 800;
+   }
+
+   .but .butts:hover {
+    background-color: #fff;
+    color: #000;
+   }
+
+   .fa-pen-to-square {
+    color: #000;
+   }
+
+   .but .butt {
+    background-color: #fff;
+    font-weight: 800;
+    border: 2px outset #000; 
+    color: #000;
+   }
+
+   .but .butt:hover {
+    background-color: rgb(219, 166, 7);
+    color: #000;
+   }
+
+   .fa-arrow-right-long {
+    color: #000;
+   }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 3.5rem;
+    column-gap: 1rem;
+}
+
+.grid-container figure {
+    margin: 0;
+    width: 100%;
+}
+
+.grid-container img {
+    width: 100%;
+    display: block;
+    border: none;
+}
+
+.grid-container figure:nth-child(1) {
+    grid-column: 2 / span 2;
+}
+
+.grid-container figure:nth-child(2) {
+    grid-column: 4 / span 2;
+}
+
+.grid-container figure:nth-child(3) {
+    grid-column: 2 / span 2;
+}
+
+.grid-container figure:nth-child(4) {
+    grid-column: 4 / span 2;
+}
+
+.grid-container figure:nth-child(5) {
+    grid-column: 3 / span 2;
+}
+
+.tatboi {
+    font-size: 2.2rem;
+}
+
+.studio {
+    padding-top: 1rem;
+}
+
+.studio p {
+    font-size: 1.5rem;
+}
+
+.copy {
+    width: 100%;
+    margin: 0;
+    padding: 2rem 0 0 0;
+}
+
+.copy-1 p, .copy-2 a {
+    font-size: 1.2rem;
+}
+
+footer .footer-bg {
+    background-color: #ed090921;
+}
+
+}
+
+@media (max-width: 350px) {
+   .yellow {
+       font-size: 1.5rem;
+    }
+
+    .menus a {
+        font-size: 1.5rem;
+    }
+
+    .split h3 {
+        font-size: 1.2rem;
+    }
+
+    .lng h1 {
+        font-size: 3.2rem;
+    }
+
+    .lng h2 {
+        font-size: 1.5rem;
+    }
+
+    .story {
+        width: 95%;
+    }
+
+    .story p {
+        font-size: 1.4rem;
+    }
+
+    .tat {
+        width: 95%;
+    }
+
+    .tat p {
+        line-height: 20px;
+        padding: 0;
+    }
+
+    .but .butts {
+        font-size: 1.7rem;
+        padding: 2rem;
+        border-radius: 5px;
+    }
+
+    .but .butt {
+        font-size: 1.7rem;
+        padding: 2rem;
+        border-radius: 5px;
+    }
+.grid-container {
+    padding: 3.5rem 0 0 0;
+}
+.tat-art-p p {
+    font-size: 2rem;
+}
+   
+    .tat-icons i {
+        font-size: 2.2rem;
+    }
+
+    .navigation h2, .services h2, .contacts h2 {
+        font-size: 2rem;
+    }
+
+    .navigation-link a, .services-p p, .contacts-p p {
+        font-size: 1.5rem;
+    }
+}
+
+
+ 
+
+
+
+
+
+
